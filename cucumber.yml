@@ -1,0 +1,4 @@
+#default: -r features --tags @student --color --format pretty --format json -o cucumber.json
+smoke: --format html --out report.html --format pretty --no-source --tag @smoke
+regression: --format html --out report.html --format pretty --no-source --tag @regression
+#ci: -r features DISPLAY=:99.0 HEADLESS=false JENKINS=true --format progress --format html -o results.html --format junit -o junit
